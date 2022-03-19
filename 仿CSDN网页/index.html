@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./comme.css">
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./article.css">
+    <script src="./jquery-1.12.4.min.js"></script>
+    <script src="./ui.js"></script>
+    <title>仿CSDN网页</title>
+</head>
+
+<body>
+    <nav class="csdn-toolbar">
+        <div class="toolbar-inside">
+            <div class="toolbar-container">
+                <div class="toolbar-container-left">
+                    <div class="toolbar-logo">
+                        <a href="https://www.csdn.net">
+                            <img src="https://img-home.csdnimg.cn/images/20201124032511.png" alt="">
+                        </a>
+                    </div>
+                    <div class="toolmenus">
+                        <ul>
+                            <li><a href="#">博客</a></li>
+                            <li><a href="#">课程</a></li>
+                            <li><a href="#">文库商城</a></li>
+                            <li><a href="#">问答</a></li>
+                            <li><a href="#">社区</a></li>
+                            <li><a href="#">插件</a></li>
+                            <li><a href="#">认证</a></li>
+                            <li><a href="#">开源</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="toolbar-container-middle">
+                    <div class="toolbar-input">
+                        <div class="input-contain">
+                            <div class="search-input">
+                                <span class="icon-fires"></span>
+                                <input type="text" placeholder="输入关键词">
+                            </div>
+                            <div class="search-botton">
+                                <i></i>
+                                <span>搜素</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="toolbar-container-right">
+                    <div class="useInfo">
+                        <div class="btn-login">
+                            <a href="" class="hasAvatar">
+                                <img src="https://profile.csdnimg.cn/E/F/9/2_hainihaoya">
+                            </a>
+                            <div class="profile">
+                                <div class="profile-top">
+                                    <div class="top-contain">
+                                        <p>冫阔乐</p>
+                                        <i>vip</i>
+                                    </div>
+                                </div>
+                                <div class="flower-middle">
+                                    <a href="#"><i>--</i>粉丝</a>
+                                    <a href="#"><i>--</i>粉丝</a>
+                                    <a href="#"><i>--</i>粉丝</a>
+                                </div>
+                                <div class="profile-bottom">
+                                    <ul>
+                                        <li><a href="#">
+                                                <i></i>
+                                                <span>个人中心</span>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <i></i>
+                                                <span>个人中心</span>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <i></i>
+                                                <span>个人中心</span>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <i></i>
+                                                <span>个人中心</span>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <i></i>
+                                                <span>个人中心</span>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <i></i>
+                                                <span>个人中心</span>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <i></i>
+                                                <span>个人中心</span>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <i></i>
+                                                <span>个人中心</span>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="userInfo-item">
+                        <ul>
+                            <li>
+                                <div href="#" class="vip">
+                                    <span>会员中心</span>
+                                    <i></i>
+                                    <div class="vip-detail">
+                                        <div class="vip-detail-top">
+                                            会员特权
+                                        </div>
+                                        <div class="vip-detail-middle">
+                                            <a href="#" class="chou">
+                                                <i></i>
+                                                抽万元礼
+                                            </a>
+                                            <a href="#" class="chou">
+                                                <i></i>
+                                                抽万元礼
+                                            </a>
+                                            <a href="#" class="chou">
+                                                <i></i>
+                                                抽万元礼
+                                            </a>
+                                            <a href="#" class="chou">
+                                                <i></i>
+                                                抽万元礼
+                                            </a>
+                                        </div>
+                                        <div class="vip-detail-footer">
+                                            <a href="#">领取限时优惠券，最高可减80元<i></i></a>
+                                            <a href="#" class="button">领取优惠券</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div href="#" class="collect">
+                                    <span>收藏</span>
+                                    <i></i>
+                                    <div class="hide">
+                                        <div class="collect-detail ">
+                                            <div class="collect-detail-left ">
+                                                <ul>
+                                                    <li>
+                                                        <span>大前端</span>
+                                                        <span>2</span>
+                                                    </li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="collect-detail-right ">
+                                                <ul>
+                                                    <li>
+                                                        <span>大前端</span>
+                                                        <span>2</span>
+                                                    </li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                    <li> <span>大前端</span><span>2</span></li>
+                                                </ul>
+                                                <a href="">获取更</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div href="#">
+                                    <span>动态</span>
+                                    <i></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div href="#">
+                                    <span>消息</span>
+                                    <i></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="write">
+                        <div class="write-item">
+                            <p>创作</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="mian-contain">
+        <article class="csdn-main-contain clearfix">
+            <section class="main-left">
+                <div class="main-userInfo">
+                    <div class="main-userInfo-top">
+                        <div class="img">
+                            <a href="#">
+                                <img src="https://profile.csdnimg.cn/5/0/1/3_erdaidai">
+                            </a>
+                        </div>
+                        <div class="img-right">
+                            <p>erdaidai</p>
+                            <div>
+                                <span>码龄5年</span>
+                                <a href="#">
+                                    <img src="https://csdnimg.cn/identity/nocErtification.png" alt="" class="avater">
+                                    暂无认证
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-userInfo-middle">
+                        <dl><a href="">
+                                <dt>
+                                    <span>14万+</span>
+                                </dt>
+                                <dt>粉丝</dt>
+                            </a></dl>
+                        <dl><a href="">
+                                <dt>
+                                    <span>14万+</span>
+                                </dt>
+                                <dt>粉丝</dt>
+                            </a></dl>
+                        <dl><a href="">
+                                <dt>
+                                    <span>14万+</span>
+                                </dt>
+                                <dt>粉丝</dt>
+                            </a></dl>
+                        <dl><a href="">
+                                <dt>
+                                    <span>14万+</span>
+                                </dt>
+                                <dt>粉丝</dt>
+                            </a></dl>
+                    </div>
+                </div>
+                <div class="main-search clearfix">
+                    <input type="text" placeholder="搜索博文文fffff章ggggg">
+                    <div class="main-search-button">
+                    </div>
+                </div>
+            </section>
+            <section class="main-right">
+                <h1>详解数组--sort()方法原理</h1>
+                <div class="stick-top">
+                    <div>
+                        <span>置顶</span>
+                        <a href="#">erdaidal</a>
+                        <i></i>
+                        <span>于 2017-09-21 17:12:55</span>
+                        <i></i>
+                        <span>9267</span>
+                        <i></i>
+                        <span>15</span>
+                    </div>
+                    <div>
+                        <span>分类专栏</span>
+                        <a href="#">前端开发学习流程</a>
+                        <span>文章标签：</span>
+                        <a href="#">函数</a>
+
+                    </div>
+                </div>
+                <div class="subscrip">
+                    <div class="subscrip-lef">
+                        <img src="" alt="">
+                        <span>前端开始发。。</span>
+                        <span>专栏收录该内容</span>
+                    </div>
+                    <div class="subsrip-right">
+                        <span>0 订阅</span>
+                        <span>9 篇文章</span>
+                        <div>订阅专栏</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <pre class="prettyprint" id="prettyprint"
+                        name="code">
+                        <code class="hljs livecodeserver has-numbering" onclick="copyCode(event)" style="position: unset;">
+                            arrayObject.
+                            <span class="hljs-built_in">sort</span>
+                            (sortby)
+                            <div class="hljs-button {2}" data-title="复制" data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.4259&quot;}">
+                            </div>
+                        </code>
+                        <ul class="pre-numbering" style="opacity: 0.341104;">
+                            <li style="color: rgb(153, 153, 153);">1</li>
+                        </ul>
+                    </pre>
+                    <p>sort()方法在适当的位置对数组进行排序&#xff0c;并且返回数组。</p> 
+                    <p>对于sort()方法&#xff0c;W3school给的定义是</p> 
+                    <pre class="prettyprint"><code class=" hljs livecodeserver">arrayObject.<span class="hljs-built_in">sort</span>(sortby)</code></pre> 
+                    <p><img src="https://img-blog.csdn.net/20170921084800521?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXJkYWlkYWk&#61;/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA&#61;&#61;/dissolve/70/gravity/SouthEast" alt="W3school的定义" title="" /></p> 
+                    <p>可知参数是可选的&#xff0c;也就是有两种情况&#xff0c;一是不加参数&#xff0c;另外一种是加<strong>函数</strong>参数&#xff0c;参数必须是函数。函数就是比较函数。</p> 
+                    <p>先看第一种不加参数的情况&#xff1a;</p> 
+                    <pre class="prettyprint"><code class=" hljs cs">        <span class="hljs-keyword">var</span> arr&#61;[<span class="hljs-number">1</span>,<span class="hljs-number">3</span>,<span class="hljs-number">10</span>,<span class="hljs-number">4</span>,<span class="hljs-number">2</span>];
+                            arr.sort();
+                            alert(arr);   <span class="hljs-comment">//1,10,2,3,4</span></code></pre> 
+                    <p><strong>默认排序顺序是升序</strong>&#xff0c;在上面的例子当中&#xff0c;我们感觉排序的结果是&#xff1a;1&#xff0c;2&#xff0c;3&#xff0c;4&#xff0c;10。怎么出来10反而在前面呢&#xff1f;<strong>那是因为sort()排序是按照字符串的Unicode码</strong>&#xff0c;10的比后面的小&#xff0c;则他在前面&#xff0c;但是这个结果不是我们想要的&#xff0c;那怎么办&#xff1f;此时我们就要用到第二种情况&#xff1a;加函数参数。</p> 
+                    <p>第二种加函数参数的情况&#xff1a;</p> 
+                    <pre class="prettyprint"><code class=" hljs javascript">        <span class="hljs-keyword">var</span> arr&#61;[<span class="hljs-number">1</span>,<span class="hljs-number">3</span>,<span class="hljs-number">10</span>,<span class="hljs-number">4</span>,<span class="hljs-number">2</span>];
+                            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compare</span><span class="hljs-params">(value1,value2)</span> {<!-- --></span>
+                                <span class="hljs-keyword">if</span>(value1&lt;value2){<!-- --><span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;}
+                                <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(value1&gt;value2){<!-- --><span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;}
+                                <span class="hljs-keyword">else</span> {<!-- --><span class="hljs-keyword">return</span> <span class="hljs-number">0</span>}
+                            }
+                            arr.sort(compare);
+                            alert(arr)   <span class="hljs-comment">//1,2,3,4,10</span></code></pre> 
+                    <p>按照我的理解是&#xff0c;在对于一个数组使用sort()方法时&#xff0c;会逐项的将数组中的元素传入到compare函数中作为参数&#xff0c;也就是说在上面 var arr&#61;[1,3,10,4,2]使用sort()方法时&#xff0c;按照顺序先把1&#xff0c;3分别传给value1和value2&#xff0c;再比较1和3的大小&#xff0c;显然1&lt;3&#xff0c;那么根据判断函数返回-1&#xff1b;sort()方法在接受到函数返回的-1时&#xff0c;就做出按照升序的原理不换位置&#xff0c;现在虽然数组位置没有变&#xff0c;但是数组是刷新过一边的&#xff0c;sort()返回了一个新的数组&#xff0c;所以在第二次传入参数的时候&#xff0c;是传入的第二项3和第三项10&#xff08;第一次换位置的话&#xff0c;那么第二项就是换过后的第二项&#xff09;按着同样的原理进行比较返回-1&#xff1b;后面的步骤就一样了&#xff0c;在第三次比较的时候要注意&#xff0c;如果前面的返回值为-1&#xff0c;那么新数组的第一项和第二项不用再比较&#xff08;升序&#xff0c;-1就不比较&#xff0c;因为-1表示大数本来就在后面 &#xff09;&#xff0c;如上面所示&#xff1a;1&lt;3,3&lt;10,那么1&lt;10;如果为1&#xff0c;比如&#xff0c;2&lt;5,5&gt;1第二个返回值是1&#xff0c;则排完的新数是&#xff1a;2&#xff0c;1&#xff0c;5&#xff1b;所以接下来就是2和1比较&#xff0c;最终的1&#xff0c;2&#xff0c;5……所以上面的结果是1,2,3,4,10</p> 
+                    <p>接下来我用一个例子来说明这个过程&#xff1a;</p> 
+                    <pre class="prettyprint"><code class=" hljs javascript">      <span class="hljs-keyword">var</span> arr&#61;[<span class="hljs-number">1</span>,<span class="hljs-number">3</span>,<span class="hljs-number">10</span>,<span class="hljs-number">4</span>,<span class="hljs-number">2</span>,<span class="hljs-number">5</span>];
+                          <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compare</span><span class="hljs-params">(value1,value2)</span> {<!-- --></span>
+                                console.log(value1,value2,arr);
+                                <span class="hljs-keyword">if</span>(value1&lt;value2){<!-- --><span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;}
+                                <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(value1&gt;value2){<!-- --><span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;}
+                                <span class="hljs-keyword">else</span> {<!-- --><span class="hljs-keyword">return</span> <span class="hljs-number">0</span>}
+                            }
+                            arr.sort(compare);
+                            alert(arr);   <span class="hljs-comment">//1,2,3,4,5,10</span></code></pre> 
+                    <p>这段代码在第三行加了<code>console.log(value1,value2,arr);</code>为了更好理解参数传入和比较的过程&#xff0c;下面图是输出结果&#xff0c;可能上面讲的那段话&#xff0c;有的人觉得繁琐&#xff0c;那么接下来我用段代码逐行分析。 <br /> <img src="https://img-blog.csdn.net/20170921174820700?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXJkYWlkYWk&#61;/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA&#61;&#61;/dissolve/70/gravity/SouthEast" alt="这里写图片描述" title="" /> <br /> (<em>我本来是想在控制台输出数组&#xff0c;结果出现这种重复以及丢失的排序&#xff0c;目前还没有解决&#xff0c;提出来让大家知道&#xff0c;以下排序过程是对的&#xff0c;只是控制台输出有误</em>。)</p> 
+                    <p>我们定义的数组是这样的 arr&#61;[1,3,10,4,2,5] <br /> 第一行&#xff1a;传入的是value1&#61;1&#xff0c;value2&#61;3&#xff0c;比较大小返回-1&#xff0c;数组的位置不变。 <br /> 第二行&#xff1a;传入的是value1&#61;3&#xff0c;value2&#61;10&#xff0c;比较大小返回-1&#xff0c;数组的位置不变。 <br /> 第三行&#xff1a;传入的是value1&#61;10&#xff0c;value2&#61;4&#xff0c;比较大小返回1&#xff0c;两项交换位置&#xff0c;现在的数组是arr&#61;[1,3,4,10,2,5] <br /> 第四行&#xff1a;现在不是继续往后面比较&#xff0c;由于返回值为1&#xff08;这是升序&#xff0c;1的时候往前面比较&#xff09;&#xff0c;则在第三行操作交换位置后&#xff0c;这传入的参数是value1&#61;3&#xff0c;value2&#61;4&#xff0c;比较大小&#xff0c;返回-1&#xff0c;位置不变&#xff0c;数组还是arr&#61;[1,3,4,10,2,5] <br /> 第五行&#xff1a;这才继续向后比较&#xff0c;传入value1&#61;10&#xff0c;value2&#61;2&#xff0c;比较大小&#xff0c;返回1&#xff0c;交换位置&#xff0c;数组为arr&#61;[1,3,4,2,10,5] <br /> 第六行&#xff1a;前面的返回值又是1&#xff0c;则又比较前面的&#xff0c;value1&#61;4&#xff0c;value2&#61;2&#xff0c;比较大小&#xff0c;返回1&#xff0c;数组变为arr&#61;[1,3,2,4,10,5] <br /> 第七行&#xff1a;第六行结果返回值是1&#xff0c;所以这个地方也不能往后面比较&#xff0c;value1&#61;3&#xff0c;value2&#61;2&#xff1b;比较大小&#xff0c;返回1&#xff0c;数组为arr&#61;[1,2,3,4,10,5] <br /> 第八行&#xff1a;同理&#xff0c;value1&#61;1&#xff0c;value2&#61;2&#xff0c;比较大小返回-1&#xff0c;数组不变。 <br /> 第九行&#xff1a;继续往后面比较&#xff0c;value1&#61;10&#xff0c;value2&#61;5&#xff0c;比较大小&#xff0c;返回1&#xff0c;改变位置&#xff0c;数组是arr&#61;[1,2,3,4,5,10] <br /> 最后一行&#xff1a;前面返回值是1&#xff0c;则向前比较&#xff0c;value1&#61;4&#xff0c;value2&#61;5&#xff0c;比较大小&#xff0c;返回-1&#xff0c;数组不变&#xff0c;&#xff08;因为前面4前面的数是排好序的&#xff0c;只要5&gt;4&#xff0c;就会比前面都大&#xff0c;则前面不用比较。&#xff09;</p> 
+                    <p>传参的详细过程就是这样&#xff0c;所以最后得到的数组是&#xff1a;arr&#61;[1,2,3,4,5,10]&#xff0c;上面是谷歌测试。</p> 
+                    <p>这是火狐的&#xff0c;结果是一样的&#xff0c;传参是一样的&#xff0c;但是控制台输出的数组没有变过 <br /> <img src="https://img-blog.csdn.net/20170921162954481?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXJkYWlkYWk&#61;/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA&#61;&#61;/dissolve/70/gravity/SouthEast" alt="火狐测试" title="" /></p> 
+                    <p>这是IE的&#xff0c;IE给value1&#xff0c;value2传值的顺序和谷歌&#xff0c;火狐是相反的&#xff0c;并且它的控制台不输出arr数组&#xff0c;但是它的结果还是一样的。 <br /> <img src="https://img-blog.csdn.net/20170921163146538?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXJkYWlkYWk&#61;/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA&#61;&#61;/dissolve/70/gravity/SouthEast" alt="这里写图片描述" title="" /></p> 
+                    <p>我又把上述代码里的数组改了&#xff1a;<code>var arr&#61;[&#39;a&#39;,&#39;C&#39;,&#39;b&#39;,&#39;D&#39;,&#39;d&#39;];</code> <br /> <img src="https://img-blog.csdn.net/20170921160941206?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXJkYWlkYWk&#61;/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA&#61;&#61;/dissolve/70/gravity/SouthEast" alt="测试2" title="" /> <br /> 再改成&#xff1a;<code>var arr &#61; [&#39;réservé&#39;, &#39;premier&#39;, &#39;cliché&#39;, &#39;communiqué&#39;, &#39;café&#39;, &#39;adieu&#39;];</code></p> 
+                    <p>谷歌这个结果是对的&#xff0c;但是控制台在输出步骤当中出了一点错误&#xff08;我圈出来的重复出现&#xff0c;还有一个不在了&#xff0c;但是结果是对的&#xff0c;目前还没有解决&#xff09; <br /> <img src="https://img-blog.csdn.net/20170921172914933?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXJkYWlkYWk&#61;/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA&#61;&#61;/dissolve/70/gravity/SouthEast" alt="这里写图片描述" title="" /></p> 
+                    <p>火狐的控制台输出数组没变&#xff0c;但是结果是一样的 <br /> <img src="https://img-blog.csdn.net/20170921173327441?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXJkYWlkYWk&#61;/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA&#61;&#61;/dissolve/70/gravity/SouthEast" alt="这里写图片描述" title="" /> <br /> <img src="https://img-blog.csdn.net/20170921173600722?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXJkYWlkYWk&#61;/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA&#61;&#61;/dissolve/70/gravity/SouthEast" alt="这里写图片描述" title="" /></p> 
+                    <p>IE的结果也是一样的。 <br /> 这个例子说明<strong>字符串也是可以用这个方法来排序的</strong>&#xff0c; <br /> <strong>《JavaScript高级程序设计》上面说&#xff0c;compare函数适合大多数数据类型。</strong></p>
+                </div>
+            </section>
+        </article>
+        <aside class="csdn-contain-right">
+            <iframe src="./index.html" frameborder="0"></iframe>
+        </aside>
+    </section>
+</body>
+<script>
+  async function  copyCode(e){
+    await navigator.clipboard.writeText(document.getElementById('prettyprint').children[0].textContent.replace(/\s +/g,""))
+  }
+</script>
+</html>

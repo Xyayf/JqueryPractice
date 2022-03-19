@@ -1,0 +1,164 @@
+
+@media screen and (max-width: 1320px) {
+    .main-right{
+        width: 760px;
+
+    }
+    .csdn-contain-right{
+        display: none;
+    }
+    .mian-contain  {
+        width:100%
+    }
+}
+@media screen and (min-width: 1380px)  {
+    .mian-contain  {
+        width:1380px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and  (min-width: 1320px) {
+    .main-right{
+        width: 682px;
+
+    }
+    .csdn-contain-right{
+        display: block;
+    }
+}
+.mian-contain{
+    padding: 8px 12px 0 12px;
+    display: flex;
+    justify-content: space-between;
+    .csdn-main-contain{
+        flex-wrap: nowrap;
+        width: 1068px;
+        .main-left{
+            width: 300px;
+            float: left;
+            margin-right: 10px;
+            font-size: 14px;
+            
+            .main-userInfo{
+                background-color: #fff;
+                padding: 15px;
+                .main-userInfo-top{
+                    display: flex ;
+                    .img{
+                        img{
+                        width: 48px;
+                        height: 48px;
+                        border-radius:50%;
+                        }
+                    }
+                    .img-right{
+                        margin-left: 10px;
+                        line-height: 25px;
+                        img{
+                            width: 12px;
+                        }
+                    }
+                    
+                }
+                .main-userInfo-middle{
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: space-around;
+                    border-bottom: 1px solid black;
+                    padding-bottom: 10px;
+                }
+            }
+            .main-search{
+                background-color: #fff;
+                padding: 10px;
+                margin-top: 10px;
+                color: #c1c2cb;
+                line-height: 32px;
+                
+                
+                input{
+                    float: left;
+                    background-color: blanchedalmond;
+                    text-indent: 15px;
+                    line-height: 32px;
+                    width: calc(100% - 32px);
+                    border-radius: 5px 0 0 5px;
+                    
+                }
+                .main-search-button{
+                    float: left;
+                    width: 32px;
+                    height: 32px;
+                    border-radius:0  10px 10px 0;
+                    background: url(	https://csdnimg.cn/cdn/content-toolbar/csdn-sou.png?v=1587021042) no-repeat center;
+                    background-size: 100%;
+                    background-color: #c1c2cb;
+                }
+            }
+        }
+        .main-right{
+            //float后 有里层元素撑开的高度，可以用媒体查询定义width
+            //或者其他方式定义宽度 width:calu(100%-310px)
+            float: right;
+            background-color: #fff;
+            padding: 20px;
+            .stick-top{
+                background-color: cornsilk;
+               div{
+                   display: flex;
+                   
+                   a{
+                    color: crimson;
+                }
+               }
+                
+            }
+            .subscrip{
+                height: 48px;
+                line-height: 36px;//=真height/在border-box下=height-上下padding-上下border
+                display: flex;
+                justify-content: space-between;
+                border: 1px solid black;
+                margin-top: 20px;
+                padding: 5px 10px;
+                box-sizing: border-box;
+                .subscrip-lef{
+                    
+                    
+                    img{
+                        width: 32px;
+                        height: 32px;
+                        vertical-align: middle;
+                    }
+                    span:nth-of-type(1){
+                        color: crimson;
+                        font-size: 18px;
+                    }
+                }
+                .subsrip-right{
+                    display: flex;
+                    div{
+                        width: 80px;
+                        height: 32px;
+                        border: 1px solid black;
+                        margin-top: 1px;
+                        line-height: 32px;
+                        text-align: center;
+                        border-radius: 20px;
+                    }
+                }
+
+            }
+           
+        }
+    }
+    .csdn-contain-right{
+        margin-left: 10px;
+        background-color: #fff;
+        width: 300px;
+        float: right;
+      
+    }
+   
+}

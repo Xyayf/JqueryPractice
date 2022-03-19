@@ -1,0 +1,353 @@
+
+.csdn-toolbar{
+    width: 100%;
+    background-color: #fff;
+    font-family: 'PingFang SC','SF Pro Display','Microsoft YaHei',Roboto,Noto,Arial,sans-serif;
+    font-size: 14px;
+    .toolbar-inside{   
+        .toolbar-container{
+            padding: 0 24px;
+            height: 48px;
+            line-height: 48px;
+            display: flex;
+            .toolbar-container-left{
+                .toolbar-logo{
+                    float: left;
+                    img{
+                        height: 48px;
+                    }
+                }
+                .toolmenus{
+                    float: right;
+                    li{
+                        display: inline-block;
+                        padding: 0 10px;
+                        &:hover{
+                            background-color: #f7f7f7;
+                        }
+
+                    }
+                }
+            }
+            .toolbar-container-middle{
+                flex: 1;
+                .toolbar-input{
+                    padding: 0 40px;
+                    .input-contain{
+                        margin-top: 8px;
+                        height: 32px;
+                        line-height: 32px;
+                        .search-input{
+                            height: 100%;
+                            float: left;
+                            width: calc(100% - 104px); 
+                            background-color: #f7f7f7;
+                            border-radius: 20px 0 0 20px;
+                            position: relative;
+                            .icon-fires{
+                                position: absolute;
+                                left: 6px;
+                                top: 6px;
+                                height: 11px;
+                                width: 8px;
+                                background: url(https://img-home.csdnimg.cn/images/20201218055848.png) no-repeat -32px 0;
+                                background-size: 300%;
+                            
+                            }
+                            input{
+                                border: none;
+                                outline: none;
+                                background-color: #f7f7f7;
+                                text-indent: 36px;
+                                
+                            }                          
+                        }
+                        .search-botton{
+                            float: left;
+                            width: 88px;
+                            background-color: #ff543d;
+                            border-radius: 0 20px 20px 0;
+                            text-align: center;
+                            color: #fff;
+                            position: relative;
+                            i{
+                                position: absolute;
+                                left: 5px;
+                                top: 5px;
+                                width: 24px;
+                                height: 24px;
+                                background: url(https://g.csdnimg.cn/common/csdn-toolbar/images/csdn-white-search.png) no-repeat center top;
+                                background-size: 100%;
+                            }
+                            
+                        }
+                    }
+                }
+                
+            }
+            .toolbar-container-right{
+                display: flex;
+                .useInfo{
+                    .btn-login{
+                        transition: all ease-in .5s;
+                        position: relative;
+                        margin-right: 15px;
+                        img{
+                            width: 32px;
+                            height: 32px;
+                            border-radius: 50%;
+                            position: relative;
+                            top: 10px
+                        }
+                        .profile{
+                            position: absolute;
+                            left: -120px;
+                            top: 47px;
+                            display: none;
+                            width: 252px;
+                            padding: 0 1px;
+                            background-color: #fff;
+                            .profile-top{
+                                height: 100px;
+                                border-bottom: 1px solid #e5e4ea;
+                                padding: 1px;
+                                .top-contain{
+                                    text-align: center;
+                                    padding-top:27px;
+                                    font-size: 15px;
+                                    font-weight: bold;
+                                    line-height :36px;
+                                }
+                            }
+                            .flower-middle{
+                                height: 68px;
+                                display: flex;
+                                justify-content: space-around;
+                                border-bottom: 1px solid #e5e4ea;
+                                a{  margin-top: 10px;
+                                    display: block;
+                                    line-height: 24px;
+                                    text-align: center;  
+                                    i{
+                                        display: block;
+                                        
+                                    }
+                                }
+                                
+                            }
+                            .profile-bottom{
+                                line-height: 58px;
+                               li{
+                                   &:nth-child(6+n){
+                                       border-top: 1px solid #e5e4ea;
+                                   }
+                                   i{
+                                    width: 32px;
+                                    height: 32px;
+                                    padding: 22px;
+                                }
+                               }
+                                
+                                
+                            }
+                        }
+                    }
+                }
+                .userInfo-item{
+                    
+                    li{
+                        float: left;
+                        margin: 0 15px;
+                        a{
+                            display: block;
+                            
+                        }
+                       .vip{
+                           position: relative;
+                        .vip-detail{
+                            display: none;
+                            position: absolute;
+                            height:206px ;
+                            width: 376px;
+                            top: 48px;
+                            left: -168px;
+                            background: url(https://img-home.csdnimg.cn/images/20210826055049.png) no-repeat center center;
+                            background-size: cover;
+                            box-sizing: border-box;
+                            padding: 10px;
+                            &::before{
+                                content: '';
+                                width: 14px;
+                                height: 7px;
+                                background: url(https://img-home.csdnimg.cn/images/20201228015851.png) no-repeat center top;
+                                background-size: cover;
+                                position: absolute;
+                                top: -6px;
+                                left: 50%;
+                                box-shadow: 0 0 10px 2px rgb(0 0 0 / 6%);
+                                transform: translateX(-50%);
+                            }
+                            .vip-detail-top{
+                                color: #b87100;
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+                            .vip-detail-middle{
+                                display: flex;
+                                justify-content: space-around;
+                                a{
+                                    color: #b87100;
+                                }
+                                .chou{
+                                    display: block;
+                                    line-height: 24px;
+                                    i{
+                                        display: block;
+                                        height: 56px;
+                                        width: 50px;
+                                        background: url(https://img-home.csdnimg.cn/images/20220215105130.png) no-repeat center ;
+                                        background-size: cover;
+                                    }
+                                }
+                                
+                            }
+                            .vip-detail-footer{
+                                margin-top: 15px;
+                                display: flex;
+                                justify-content: space-around;
+                                i{
+                                    width: 12px;
+                                    height: 12px;
+                                    display: inline-block;
+                                    background: url(	https://img-home.csdnimg.cn/images/20210830105250.png) center;
+                                }
+                                    .button{
+                                        margin-top: 10px;
+                                        width: 80px;
+                                        height: 28px;
+                                        line-height:30px ;
+                                        color: #b87100;
+                                        background: linear-gradient(270deg,#f8c883 0,#fae8d0 100%);
+                                        border-radius: 10px;
+                                        text-align: center;
+
+                                }
+                            }
+                        }
+                       }
+                       .collect{
+                           position: relative;
+                           .hide{
+                               display: none;
+                           }
+                           .collect-detail{
+                               position: absolute;
+                               height: 496px ;
+                               right: -150px;
+                               top: 50px;
+                                background-color: #fff;
+                                border-radius: 4px;
+                                box-sizing: border-box;
+                                padding-top: 5px;
+                                display: flex;
+                                &::before{
+                                    content: '';
+                                    width: 0;
+                                    height: 0;
+                                    border:7px solid transparent;
+                                    border-bottom: 7px solid #fff;
+                                    position: absolute;
+                                    top: -14px;
+                                    left: 50%;
+                                    transform: translateX(59px);
+                                }
+                               
+                                .collect-detail-left{
+                                    width: 159px;
+                                    // overscroll-behavior: contain;
+                                    overflow-y: auto;
+                                    
+                                   li{
+                                       width: 100%;
+                                       margin: 0;
+                                       &:hover{
+                                           background-color:#c1c2cb ;
+                                       }
+                                       & span:nth-child(1){
+                                           float: left;
+                                           padding-left: 10px;
+                                       }
+                                       & span:nth-child(2){
+                                        float: right;
+                                        padding-right: 10px;
+                                    }
+                                   }
+                                }
+                                .collect-detail-right{
+                                    //高度为未设置父级设置flex，子级高度为父级高度或者另一个子级高度
+                                    width: 300px;
+                                    border-left: 1px solid #e8e8ed;
+                                    display: flex;
+                                    flex-direction: column;
+                                    ul{//
+                                        overflow-y: auto;
+                                        list-style-type: circle;
+                                        margin-block-start: 0px;
+                                        margin-block-end: 0px;
+                                        li{
+                                            width: 100%;
+                                            margin: 0;
+                                            &:hover{
+                                                background-color:#c1c2cb ;
+                                            }
+                                            & span:nth-child(1){
+                                                float: left;
+                                                padding-left: 10px;
+                                            }
+                                            & span:nth-child(2){
+                                             float: right;
+                                             padding-right: 10px;
+                                         }
+                                        }
+                                    }
+                                    a{ 
+                                        flex:1;//分一份高度;剩下的给上面的ul去分父级高度
+                                        display: inline-block;
+                                        margin-top: 8px;
+                                        color: #999aaa;
+                                        height: 40px;
+                                        border-top: 1px solid #e8e8ed;
+ 
+                                    }
+
+                                    
+                                }
+                           }
+                       }
+                     
+                    }
+                }
+                .write{
+                    margin-top: 10px;
+                   .write-item{
+                       width: 88px;
+                       height: 22px;
+                       line-height: 22px;
+                       background-color: #ff543d;
+                       border-radius: 10px;
+                       text-align: center;
+                       color: #fff;
+                       font-size: 14px;
+                       font-weight: 300;
+                   } 
+                }
+
+            }
+        }
+    }
+    
+}
+.profile-over-active{
+        transform: scale(1.3);
+          
+}

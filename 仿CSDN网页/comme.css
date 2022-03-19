@@ -1,0 +1,32 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+body html {
+  height: 100%;
+}
+body {
+  margin: 0%;
+  padding: 0%;
+  min-height: 100%;
+  min-width: 1200px;
+  background: url(image/bg.png) no-repeat top;
+  color: rgba(0, 0, 0, 0.75);
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.75);
+}
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+input {
+  outline: none;
+  border: none;
+}
