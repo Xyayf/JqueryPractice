@@ -5,7 +5,7 @@
    
     <title>Document</title>
 
-    <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../jquery-1.12.4.min.js"></script>
     <style>
     *{margin:0;padding:0;}
     body{font-size:12px;}
@@ -31,37 +31,30 @@
         $(function (){
             // 1.获取li
             var $lis = $("#list li");
-    
             // 2.点击事件
             $lis.click(function () {
                 // 3.点击 右侧的li 一个一个点
-                    // 1 21
-                    // 2 42
-                    // 3 63
-               
-    
+                // 1 21
+                // 2 42
+                // 3 63
                 $(this).animate({
                     "left":21 * $(this).index(),
                 });
     
                 // 4.点击右侧 跳跃点
-                        // 当前点击元素 的前面所有元素 都要改变left
-                        // 前面的所有元素
-                    var $prev = $(this).prevAll();
-
-                    // 每一个  都要改变 遍历循环
-                    // 注意 里面的this 和外面的不一样
-                    $prev.each(function () {
-    
-                        $(this).animate({
-                            "left":21 * $(this).index(),
+                // 当前点击元素 的前面所有元素 都要改变left
+                // 前面的所有元素
+                var $prev = $(this).prevAll();
+                // 每一个  都要改变 遍历循环
+                // 注意 里面的this 和外面的不一样
+                $prev.each(function () {
+                    $(this).animate({
+                        "left":21 * $(this).index(),
                     });              
             })
-
-             // 5.点击左侧 , 让他后面的所有元素 回到原先的位置 left
-
-            //  后面的所有元素 
-                        // 你点击的当前元素脚标是3
+                // 5.点击左侧 , 让他后面的所有元素 回到原先的位置 left
+                //  后面的所有元素 
+                // 你点击的当前元素脚标是3
              var $next = $(this).nextAll();
              $next.each(function () {
                 //  后面元素 脚标是4
@@ -87,11 +80,11 @@
 <body>
 <div id="accordion">
 	<ul id="list">
-	<li class="bar01"><span>非洲景色01</span><img src="../images/001.jpg" /></li>
-    <li class="bar02"><span>非洲景色02</span><img src="../images/002.jpg" /></li>
-    <li class="bar03"><span>非洲景色03</span><img src="../images/003.jpg" /></li>
-    <li class="bar04"><span>非洲景色04</span><img src="../images/004.jpg" /></li>
-    <li class="bar05"><span>非洲景色05</span><img src="../images/005.jpg" /></li>
+	<li class="bar01"><span>非洲景色01</span><img src="../仿CSDN网页/image/bg.png" /></li>
+    <li class="bar02"><span>非洲景色02</span><img src="../仿CSDN网页/image/bg.png" /></li>
+    <li class="bar03"><span>非洲景色03</span><img src="../仿CSDN网页/image/bg.png" /></li>
+    <li class="bar04"><span>非洲景色04</span><img src="../仿CSDN网页/image/bg.png" /></li>
+    <li class="bar05"><span>非洲景色05</span><img src="../仿CSDN网页/image/bg.png"  /></li>
 	</ul>
 </div>
 </body>

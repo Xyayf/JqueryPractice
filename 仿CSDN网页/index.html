@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- 导航 -->
     <nav class="csdn-toolbar">
         <div class="toolbar-inside">
             <div class="toolbar-container">
@@ -219,6 +220,7 @@
             </div>
         </div>
     </nav>
+    <!-- 主体 -->
     <section class="mian-contain">
         <article class="csdn-main-contain clearfix">
             <section class="main-left">
@@ -272,6 +274,14 @@
                     <input type="text" placeholder="搜索博文文fffff章ggggg">
                     <div class="main-search-button">
                     </div>
+                </div>
+                <div class="drop-down" onclick="dropdown(event)" id="drop-down">
+                            <h3>最新评论</h3>
+                            <div class="text">
+                                <p>因吉: 博主牛博，解决了我一直没有解决的问题</p>
+                                <p>深度学习之从开始到放弃: 谢谢您！</p>
+                                <p>erdaidai: 抱歉，才看见。和一般的kmeans聚类一样，k取值决定最后聚类簇数。</p>
+                            </div>
                 </div>
             </section>
             <section class="main-right">
@@ -369,7 +379,37 @@
     </section>
 </body>
 <script>
-  async function  copyCode(e){
+    //下拉
+    var dropdowns=true
+    var flag=true
+    document.getElementById('drop-down').addEventListener("transitionend", function(){
+           flag=true
+           
+       })
+    function dropdown(e){
+        if(flag){
+            flag=false //节流
+            dropdowns=!dropdowns //控制上还是下的变量
+            let node
+            if(e.target.nodeName==='H3'){
+                node=e.target.parentNode
+            }else{
+                node=e.target
+            }
+            
+            if(!dropdowns){
+                node.style.height='200px'
+            }else{
+              
+                node.style.height='20px'
+                
+            }
+      
+        }
+        
+    }
+ //剪切板
+    async function  copyCode(e){
     await navigator.clipboard.writeText(document.getElementById('prettyprint').children[0].textContent.replace(/\s +/g,""))
   }
 </script>

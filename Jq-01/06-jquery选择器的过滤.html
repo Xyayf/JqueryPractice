@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../jquery-1.12.4.min.js"></script>
 
     <script>
         $(function () {
@@ -13,17 +13,25 @@
             // 1.has 包含X元素的 X个元素X
 
             var $element = $("div").has("p");
-            // $element.css({"background-color":"red"});
+            $element.css({"background-color":"red"});
 
             // 2.not 除了某个标签外的元素
-                        // 选中除了.box2的元素外的 div标签
+            // 选中除了.box2的元素外的 div标签
             $element = $("div").not(".box2");
             $element.css({"background-color":"red"});
 
             // 3.eq(角标) 等于
             var $eq = $("li");
             $eq.eq(3).css({"color":"red"});
+            
+            //4.first 首个元素
+            $eq.first().css({'color':'red'})
 
+            //5.last 最后一个元素
+            $eq.last().css({'color':'red'})
+
+            //filter 返回匹配元素
+            $("div").filter('.box3').css({'color':'red'})
 
         })
     </script>

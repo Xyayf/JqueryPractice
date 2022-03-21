@@ -15,7 +15,7 @@
         }
     </style>
 
-<script src="../js/jquery-1.12.4.min.js"> </script>
+<script src="../jquery-1.12.4.min.js"> </script>
 
     <script>
         // 1.准备
@@ -25,7 +25,7 @@
             // 2.读取属性
             // oDiv.style.backgroundColor
             var sColor = $div.css("background-color");
-            alert(sColor);
+
             // 3.写入
             // oDiv.style.backgroundColor = "red";
             $div.css({
@@ -36,7 +36,14 @@
                 "color":"gold",
 
             });
-            alert($div.css("height"));
+             // 1.设置宽高 背景色
+            var $div = $(".box");
+            $div.css({
+                "width":"200px",
+                "height":"200px",
+                "background-color":"red"
+            });
+
         })
     </script>
 </head>

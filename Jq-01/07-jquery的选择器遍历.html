@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../jquery-1.12.4.min.js"></script>
+    <script>    
+        $(function () {
+          
+            // 1.父子关系 parent
+            //返回被选择元素直接父元素(上一级)
+            $('.grandson').parent().css({'color':'red'})
+            //返回被选择父级(向上到根元素html)
+            $('.grandson').parents().css({"background-color":"yellow"})
+
+
+            // 2.找相邻上面的一个元素
+            $('.child3').prev().css({"background-color":"yellow"})
+            // 相邻上面的全部元素
+            $('.child3').prevAll().css({"background-color":"yellow"});
+
+
+            // 3.找相邻下面的一个元素
+            $('.child1').next().css({"background-color":"yellow"})
+            // 相邻下面的全部元素
+            $('.child1').nextAll().css({"background-color":"yellow"});
+
+
+            // 4.除了它自己 别的都选中 平级元素
+            $('.child2').siblings().css({"background-color":"yellow"});
+
+            
+            // 5.子元素 获取所有子元素(向下一级)
+            $('.box4').children().css({"background-color":"yellow"});
+
+
+            //6.查找里面的子元素 (一直向下到到最后一个)
+            $('.box4').find(".grandson");
+          
+
+        })
+    </script>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+
+    <div class="box4">4
+        <div class="child1">子元素1</div>
+        <div class="child2">子元素2</div>
+        <div class="child3">子元素3
+            <div class="grandson">孙子</div>
+        </div>
+        <div class="child4">子元素4</div>
+    </div>
+    <div class="box5">5</div>
+    <div class="box6">6</div>
+    <div class="box7">7</div>
+    
+</body>
+</html>

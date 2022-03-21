@@ -68,7 +68,7 @@
             padding:5px 10px;
         }
     </style>
-    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../jquery-1.12.4.min.js"></script>
   
     <script>
         $(function () {
@@ -102,6 +102,7 @@
                 // 4.判断AB
                 var sWho = $who.val();
                 var sOldContent = $words.html();
+                
                 var sNewContent = "";
                 if(sWho == 0){//A 
                     sNewContent = sOldContent + '<div class="atalk"><span>A说：'+sContent +'</span></div>';
@@ -112,6 +113,7 @@
 
                 // 6.赋值
                 $words.html(sNewContent);
+               
 
                   // 7.清空输入框
                   $inputTxt.val("");
@@ -140,6 +142,9 @@
             </select>
             <input type="text" class="talk_word" id="talkwords">
             <input type="button" value="发送" class="talk_sub" id="talksub">
+        </div>
+        <div class="jiancha">
+            <div class="btalk"><span>B说：还没呢，你呢？</span></div>
         </div>
     </div>
 </body>

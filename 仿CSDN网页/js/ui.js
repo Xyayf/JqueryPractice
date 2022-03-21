@@ -19,8 +19,9 @@ $(function(){
     $('.collect').mousemove(function(){
         $(this).find('.hide').show()
     })
-    $('.collect').mouseleave(function(){
+    $('.collect').mouseleave(function(e){
         $(this).find('.hide').hide()
+        // console.log(e)
     })
     var heitht=$('.csdn-toolbar').outerHeight()
     $(window).bind('scroll',function(){

@@ -6,17 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <!-- 1.关联Jquery的函数库 -->
-    <script src="../js/jquery-1.12.4.min.js"> </script>
+    <script src="../jquery-1.12.4.min.js"> </script>
 
     <script>
         // 2.jquery 代码少
         $(document).ready(function(){
             // 1.获取元素
             var $div = $("#div1");
-
+               $div.delegate('button','click',function(){
+                   console.log($(this).html())//事件委托后的的$(this)为触发事件元素对象不是调用回调函数的对象
+               })
             // 2.获取属性
-            var sSize = $div.css("fontSize");
-            alert("jquery +" + sSize);
+           
 
         })
 
@@ -24,15 +25,19 @@
         window.onload = function(){
             // 1.获取元素
             var oDiv = document.getElementById("div1");
+            oDiv.onclick=function(){
+                console.log(this)
+            }
             // 2.获取属性
-            var sSize = oDiv.style.fontSize;
-
-            alert("JS +" + sSize);
+          
 
         }
     </script>
 </head>
 <body>
-    <div class="box" id="div1">div 的标签</div>
+    <div class="box" id="div1">div 的标签
+        <button>提交</button>
+        <button>提佳品</button>
+    </div>
 </body>
 </html>
